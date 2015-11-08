@@ -1,0 +1,37 @@
+extends layout
+      
+block content
+    .container
+      // Static navbar
+      .navbar.navbar-default(role='navigation')
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='http://hooman.me') #{title}
+
+          .navbar-collapse.collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='#') About
+              li
+                a(href='#') Projects
+              li
+                a(href='#') Blog                             
+
+            ul.nav.navbar-nav.navbar-right
+              li
+                .navbar-brand.navbar-right.icon
+                  a(href="https://twitter.com/yar00001")
+                    .social_icon
+                      i(class="fa fa-twitter")
+              li
+                .navbar-brand.navbar-right.icon
+                  a(href="https://github.com/hmny")
+                    i(class="fa fa-github")
+               li
+                .navbar-brand.navbar-right.icon
+                  i(class="fa fa-linkedin-square")

@@ -16,23 +16,23 @@ block content
           .navbar-collapse.collapse
             ul.nav.navbar-nav
               li.active
-                a(href='http://hooman.me') About
+                a(href='#') About
               li
-                a(href='http://hooman.me/projects') Personal Projects
+                a(href='#') Projects
               li
-                a(href='#') Blog
-                
+                a(href='#') Blog                             
+
             ul.nav.navbar-nav.navbar-right
               li
-                a(href="https://www.linkedin.com/in/hoomanyar", class="icon")
-                  i(class="fa fa-linkedin-square")
-              li
-                a(href="https://github.com/hmny", class="icon")
-                  i(class="fa fa-github")
-              li
-                a(href="https://twitter.com/yar00001", class="icon")
+                .navbar-brand.navbar-right.icon
                   i(class="fa fa-twitter")
-                                    
+              li
+                .navbar-brand.navbar-right.icon
+                  i(class="fa fa-github")
+               li
+                .navbar-brand.navbar-right.icon
+                  i(class="fa fa-linkedin-square")
+                                   
 
       .row
         .col-md-12
@@ -41,7 +41,7 @@ block content
       .row
         .col-md-12
           .contact_button
-            button(class="button_me", onclick="window.location.href='mailto:hooman.yar@gmail.com'") Contact me
+            button(class="button_me") Contact me
                     
        .row
         .col-md-12
