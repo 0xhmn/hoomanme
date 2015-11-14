@@ -2,8 +2,15 @@
 body {
   padding-top: 40px;
   padding-bottom: 20px;
-    line-height: 1.8;
-    color: #333333;
+  line-height: 1.8;
+  color: #333333;
+}
+p, li, ul, strong, a, div {
+    font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #333333;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -92,7 +99,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #444444;    
     font-weight: bold;
     margin-top: 10px;
@@ -113,7 +120,7 @@ h1, h2, h3 {
 .button_me {
     background-color: #efefef;
     font-size: 1.5rem;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     color: #333;
     height: 50px;
@@ -138,7 +145,7 @@ h1, h2, h3 {
 }
   
 .section-header h3 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:bold;
   letter-spacing:-.05rem;
   padding-top: 5px;
@@ -148,7 +155,7 @@ h1, h2, h3 {
 
 /* skill bar */
 #skills span {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   top: -14px;
   left: 2%;
   position: relative;
@@ -193,4 +200,66 @@ progress::-moz-progress-bar {
 a.icon {
   font-size: 20px;
   color: #38a8d1;
+}
+
+.whoami {
+  text-align: center;
+  padding: 20px;
+}
+
+/* coursor */
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 50px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
 }
